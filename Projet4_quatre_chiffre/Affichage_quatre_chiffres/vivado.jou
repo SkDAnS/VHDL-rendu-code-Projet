@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 30 09:53:24 2025
+# Process ID: 55888
+# Current directory: C:/Users/anass/VHDL/Projet1/Affichage_quatre_chiffres
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25840 C:\Users\anass\VHDL\Projet1\Affichage_quatre_chiffres\Affichage_quatre_chiffres.xpr
+# Log file: C:/Users/anass/VHDL/Projet1/Affichage_quatre_chiffres/vivado.log
+# Journal file: C:/Users/anass/VHDL/Projet1/Affichage_quatre_chiffres\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/anass/VHDL/Projet1/Affichage_quatre_chiffres/Affichage_quatre_chiffres.xpr
+update_compile_order -fileset sources_1

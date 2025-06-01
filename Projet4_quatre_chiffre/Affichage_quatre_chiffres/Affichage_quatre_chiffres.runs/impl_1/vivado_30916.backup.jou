@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat May 17 20:23:38 2025
+# Process ID: 30916
+# Current directory: C:/Users/anass/VHDL/Projet1/Affichage_quatre_chiffres/Affichage_quatre_chiffres.runs/impl_1
+# Command line: vivado.exe -log afficheur_4digits.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source afficheur_4digits.tcl -notrace
+# Log file: C:/Users/anass/VHDL/Projet1/Affichage_quatre_chiffres/Affichage_quatre_chiffres.runs/impl_1/afficheur_4digits.vdi
+# Journal file: C:/Users/anass/VHDL/Projet1/Affichage_quatre_chiffres/Affichage_quatre_chiffres.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source afficheur_4digits.tcl -notrace

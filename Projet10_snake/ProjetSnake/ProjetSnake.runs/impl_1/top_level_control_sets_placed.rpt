@@ -1,0 +1,105 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu May 22 11:01:17 2025
+| Host         : Dgda_01 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
+| Design       : top_level
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   129 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |    18 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               6 |            4 |
+| No           | No                    | Yes                    |              12 |            6 |
+| No           | Yes                   | No                     |              86 |           26 |
+| Yes          | No                    | No                     |               5 |            3 |
+| Yes          | No                    | Yes                    |              10 |            2 |
+| Yes          | Yes                   | No                     |             176 |           74 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+------------------------------------+-------------------------------------------------+------------------+----------------+
+|         Clock Signal         |            Enable Signal           |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++------------------------------+------------------------------------+-------------------------------------------------+------------------+----------------+
+|  Snake_Game_Inst/clk_divider |                                    | Snake_Game_Inst/VGA_Controller/h_count_reg[8]_3 |                1 |              4 |
+|  clk_IBUF_BUFG               | btn_up_debounced                   |                                                 |                3 |              5 |
+|  clk_IBUF_BUFG               |                                    |                                                 |                4 |              6 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake_length       | Snake_Game_Inst/game_clk_counter1               |                3 |              6 |
+|  Snake_Game_Inst/clk_divider |                                    | Snake_Game_Inst/VGA_Controller/h_count_reg[8]_4 |                2 |              8 |
+|  Snake_Game_Inst/clk_divider | Snake_Game_Inst/VGA_Controller/sel | reset                                           |                2 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/food_pos[x]        | Snake_Game_Inst/game_clk_counter1               |                5 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[0][x]        | Snake_Game_Inst/game_clk_counter1               |                5 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[12][x]       | Snake_Game_Inst/game_clk_counter1               |                5 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[15][x]       | Snake_Game_Inst/game_clk_counter1               |                6 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[3][x]        | Snake_Game_Inst/game_clk_counter1               |                4 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[6][x]        | Snake_Game_Inst/game_clk_counter1               |                2 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[7][x]        | Snake_Game_Inst/game_clk_counter1               |                5 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[8][x]        | Snake_Game_Inst/game_clk_counter1               |                4 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[9][x]        | Snake_Game_Inst/game_clk_counter1               |                4 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[13][x]       | Snake_Game_Inst/game_clk_counter1               |                3 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[1][x]        | Snake_Game_Inst/game_clk_counter1               |                3 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[4][x]        | Snake_Game_Inst/game_clk_counter1               |                4 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[10][x]       | Snake_Game_Inst/game_clk_counter1               |                5 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[2][x]        | Snake_Game_Inst/game_clk_counter1               |                5 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[11][x]       | Snake_Game_Inst/game_clk_counter1               |                4 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[5][x]        | Snake_Game_Inst/game_clk_counter1               |                5 |             10 |
+|  clk_IBUF_BUFG               | Snake_Game_Inst/snake[14][x]       | Snake_Game_Inst/game_clk_counter1               |                2 |             10 |
+|  Snake_Game_Inst/clk_divider |                                    | reset                                           |                6 |             12 |
+|  clk_IBUF_BUFG               |                                    | btn_up_debounced                                |                6 |             20 |
+|  clk_IBUF_BUFG               |                                    | Snake_Game_Inst/game_clk_counter1               |                9 |             22 |
+|  clk_IBUF_BUFG               |                                    | Snake_Game_Inst/game_clk_counter[0]_i_1_n_0     |                8 |             32 |
++------------------------------+------------------------------------+-------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,420 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 27 10:54:23 2025
+# Process ID: 26084
+# Current directory: C:/Users/anass/VHDL/Projet1/pong/pong/pong.runs/synth_1
+# Command line: vivado.exe -log top_pong.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_pong.tcl
+# Log file: C:/Users/anass/VHDL/Projet1/pong/pong/pong.runs/synth_1/top_pong.vds
+# Journal file: C:/Users/anass/VHDL/Projet1/pong/pong/pong.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_pong.tcl -notrace
+Command: synth_design -top top_pong -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 41876 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 700.266 ; gain = 176.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_pong' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/top_pong.vhd:19]
+INFO: [Synth 8-3491] module 'clk_divider' declared at 'C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/clk_divider.vhd:5' bound to instance 'clk_div_inst' of component 'clk_divider' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/top_pong.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/clk_divider.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/clk_divider.vhd:13]
+INFO: [Synth 8-3491] module 'paddle_control' declared at 'C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/paddle_control.vhd:5' bound to instance 'paddles_inst' of component 'paddle_control' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/top_pong.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'paddle_control' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/paddle_control.vhd:18]
+WARNING: [Synth 8-6014] Unused sequential element ball_center_y_reg was removed.  [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/paddle_control.vhd:65]
+WARNING: [Synth 8-6014] Unused sequential element ai_target_reg was removed.  [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/paddle_control.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element paddle_center_reg was removed.  [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/paddle_control.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'paddle_control' (2#1) [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/paddle_control.vhd:18]
+INFO: [Synth 8-3491] module 'ball' declared at 'C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/ball.vhd:5' bound to instance 'ball_inst' of component 'ball' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/top_pong.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'ball' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/ball.vhd:18]
+WARNING: [Synth 8-6014] Unused sequential element paddle_center_reg was removed.  [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/ball.vhd:121]
+WARNING: [Synth 8-6014] Unused sequential element paddle_hit_pos_reg was removed.  [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/ball.vhd:122]
+INFO: [Synth 8-256] done synthesizing module 'ball' (3#1) [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/ball.vhd:18]
+INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_controller_640_60.vhd:5' bound to instance 'vga_ctrl_inst' of component 'vga_controller_640_60' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/top_pong.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_controller_640_60.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (4#1) [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_controller_640_60.vhd:17]
+INFO: [Synth 8-3491] module 'vga_display' declared at 'C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_display.vhd:5' bound to instance 'display_inst' of component 'vga_display' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/top_pong.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'vga_display' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_display.vhd:23]
+WARNING: [Synth 8-614] signal 'display_score_p1' is read in the process but is not in the sensitivity list [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_display.vhd:61]
+WARNING: [Synth 8-614] signal 'display_score_p2' is read in the process but is not in the sensitivity list [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_display.vhd:154]
+INFO: [Synth 8-4471] merging register 'blue_reg[3:0]' into 'green_reg[3:0]' [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_display.vhd:254]
+WARNING: [Synth 8-6014] Unused sequential element blue_reg was removed.  [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_display.vhd:254]
+INFO: [Synth 8-256] done synthesizing module 'vga_display' (5#1) [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/vga_display.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'top_pong' (6#1) [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/sources_1/new/top_pong.vhd:19]
+WARNING: [Synth 8-3331] design vga_display has unconnected port reset
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[9]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[8]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[7]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[6]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[5]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[4]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[3]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[2]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[1]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 763.703 ; gain = 240.379
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 763.703 ; gain = 240.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 763.703 ; gain = 240.379
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anass/VHDL/Projet1/pong/pong/pong.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_pong_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_pong_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 887.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 887.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 887.922 ; gain = 364.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 887.922 ; gain = 364.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 887.922 ; gain = 364.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 887.922 ; gain = 364.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     11 Bit       Adders := 6     
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 14    
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               10 Bit    Registers := 6     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 6     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module paddle_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module ball 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 5     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 7     
+Module vga_controller_640_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+Module vga_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design vga_display has unconnected port reset
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[9]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[8]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[7]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[6]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[5]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[4]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[3]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[2]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[1]
+WARNING: [Synth 8-3331] design paddle_control has unconnected port ball_x[0]
+INFO: [Synth 8-3886] merging instance 'display_inst/green_reg[0]' (FDS) to 'display_inst/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'display_inst/green_reg[1]' (FDS) to 'display_inst/green_reg[2]'
+INFO: [Synth 8-3886] merging instance 'display_inst/red_reg[0]' (FD) to 'display_inst/red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'display_inst/red_reg[1]' (FD) to 'display_inst/red_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ball_inst/ballY_reg[9] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 887.922 ; gain = 364.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 887.922 ; gain = 364.598
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 887.922 ; gain = 364.598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 891.066 ; gain = 367.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 895.945 ; gain = 372.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 895.945 ; gain = 372.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 895.945 ; gain = 372.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 895.945 ; gain = 372.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 895.945 ; gain = 372.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 895.945 ; gain = 372.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    97|
+|3     |LUT1   |    17|
+|4     |LUT2   |   212|
+|5     |LUT3   |    48|
+|6     |LUT4   |   224|
+|7     |LUT5   |   109|
+|8     |LUT6   |   115|
+|9     |FDCE   |   153|
+|10    |FDPE   |    16|
+|11    |FDRE   |     3|
+|12    |FDSE   |     1|
+|13    |IBUF   |     4|
+|14    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+----------------------+------+
+|      |Instance        |Module                |Cells |
++------+----------------+----------------------+------+
+|1     |top             |                      |  1015|
+|2     |  ball_inst     |ball                  |   288|
+|3     |  clk_div_inst  |clk_divider           |     6|
+|4     |  display_inst  |vga_display           |    40|
+|5     |  paddles_inst  |paddle_control        |   334|
+|6     |  vga_ctrl_inst |vga_controller_640_60 |   327|
++------+----------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 895.945 ; gain = 372.621
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 895.945 ; gain = 248.402
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 895.945 ; gain = 372.621
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 905.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 34 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 905.188 ; gain = 608.523
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 905.188 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/anass/VHDL/Projet1/pong/pong/pong.runs/synth_1/top_pong.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_pong_utilization_synth.rpt -pb top_pong_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 27 10:54:58 2025...

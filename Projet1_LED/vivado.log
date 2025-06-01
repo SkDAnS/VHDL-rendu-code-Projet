@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 30 09:20:14 2025
+# Process ID: 30312
+# Current directory: C:/Users/anass/VHDL/Projet1/Projet1_LED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent44676 C:\Users\anass\VHDL\Projet1\Projet1_LED\Projet1_LED.xpr
+# Log file: C:/Users/anass/VHDL/Projet1/Projet1_LED/vivado.log
+# Journal file: C:/Users/anass/VHDL/Projet1/Projet1_LED\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/anass/VHDL/Projet1/Projet1_LED/Projet1_LED.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 30 09:53:28 2025...

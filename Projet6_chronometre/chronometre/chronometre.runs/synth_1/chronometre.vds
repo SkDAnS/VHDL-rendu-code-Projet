@@ -1,0 +1,347 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat May 17 20:34:11 2025
+# Process ID: 18416
+# Current directory: C:/Users/anass/VHDL/Projet1/chronometre/chronometre.runs/synth_1
+# Command line: vivado.exe -log chronometre.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source chronometre.tcl
+# Log file: C:/Users/anass/VHDL/Projet1/chronometre/chronometre.runs/synth_1/chronometre.vds
+# Journal file: C:/Users/anass/VHDL/Projet1/chronometre/chronometre.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source chronometre.tcl -notrace
+Command: synth_design -top chronometre -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2268 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 701.594 ; gain = 177.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'chronometre' [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/chronometre.vhd:35]
+INFO: [Synth 8-3491] module 'div_1hz' declared at 'C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/div_1hz.vhd:26' bound to instance 'U1_DIV_1HZ' of component 'div_1hz' [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/chronometre.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'div_1hz' [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/div_1hz.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'div_1hz' (1#1) [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/div_1hz.vhd:34]
+INFO: [Synth 8-3491] module 'div_250hz' declared at 'C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/div_250hz.vhd:25' bound to instance 'U2_DIV_250HZ' of component 'div_250hz' [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/chronometre.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'div_250hz' [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/div_250hz.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'div_250hz' (2#1) [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/div_250hz.vhd:33]
+INFO: [Synth 8-3491] module 'time_counter' declared at 'C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/time_counter.vhd:25' bound to instance 'U3_TIME_COUNTER' of component 'time_counter' [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/chronometre.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'time_counter' [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/time_counter.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'time_counter' (3#1) [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/time_counter.vhd:36]
+INFO: [Synth 8-3491] module 'display_controller' declared at 'C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/display_controller.vhd:25' bound to instance 'U4_DISPLAY_CONTROLLER' of component 'display_controller' [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/chronometre.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'display_controller' [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/display_controller.vhd:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/display_controller.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'display_controller' (4#1) [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/display_controller.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'chronometre' (5#1) [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/sources_1/new/chronometre.vhd:35]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 764.324 ; gain = 240.375
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 764.324 ; gain = 240.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 764.324 ; gain = 240.375
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/anass/VHDL/Projet1/chronometre/chronometre.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/chronometre_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/chronometre_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 872.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 872.602 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 872.602 ; gain = 348.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 872.602 ; gain = 348.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 872.602 ; gain = 348.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 872.602 ; gain = 348.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module div_1hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+Module div_250hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+Module time_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module display_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 872.602 ; gain = 348.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 872.602 ; gain = 348.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 879.320 ; gain = 355.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 879.320 ; gain = 355.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 886.930 ; gain = 362.980
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 886.930 ; gain = 362.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 886.930 ; gain = 362.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 886.930 ; gain = 362.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 886.930 ; gain = 362.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 886.930 ; gain = 362.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     5|
+|4     |LUT2   |    33|
+|5     |LUT3   |     2|
+|6     |LUT4   |    27|
+|7     |LUT5   |    19|
+|8     |LUT6   |     6|
+|9     |FDCE   |    62|
+|10    |IBUF   |     2|
+|11    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   |   181|
+|2     |  U1_DIV_1HZ            |div_1hz            |    68|
+|3     |  U2_DIV_250HZ          |div_250hz          |    47|
+|4     |  U3_TIME_COUNTER       |time_counter       |    42|
+|5     |  U4_DISPLAY_CONTROLLER |display_controller |     9|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 886.930 ; gain = 362.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 886.930 ; gain = 254.703
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 886.930 ; gain = 362.980
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 901.160 ; gain = 599.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.160 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/anass/VHDL/Projet1/chronometre/chronometre.runs/synth_1/chronometre.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file chronometre_utilization_synth.rpt -pb chronometre_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May 17 20:34:39 2025...

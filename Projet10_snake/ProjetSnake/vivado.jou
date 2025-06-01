@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 30 12:20:16 2025
+# Process ID: 2804
+# Current directory: C:/Users/anass/VHDL/Projet1/ProjetSnake
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10928 C:\Users\anass\VHDL\Projet1\ProjetSnake\ProjetSnake.xpr
+# Log file: C:/Users/anass/VHDL/Projet1/ProjetSnake/vivado.log
+# Journal file: C:/Users/anass/VHDL/Projet1/ProjetSnake\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/anass/VHDL/Projet1/ProjetSnake/ProjetSnake.xpr
+update_compile_order -fileset sources_1
